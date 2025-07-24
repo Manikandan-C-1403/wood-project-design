@@ -1,0 +1,986 @@
+
+body{
+    margin: 0px;
+    font-family: "Playfair Display", serif;
+    background-color: #F0F0F0;
+}
+
+h1, h3, h4, h5, p{
+    margin: 0px;
+}
+
+.Padd{
+    padding: 0px 50px;
+}
+
+ul {
+  list-style: '✓ ';
+}
+
+/* .CardTwo>ul li:before {
+  content: '✓ ';
+}
+.ContInfo>ul li:before {
+     content: '✓ ';
+} */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p>a:hover{
+    border-bottom: 2px solid black;
+
+}
+
+ul>li>a:hover{
+    color: #E65C27;
+    border-bottom: 2px solid black;
+}
+
+.NavFlex>a:hover{
+    color: #E65C27;
+
+}
+
+
+                                               /* Navbar */
+
+.NavBar{
+    font-size: clamp(18px, 1.5vw, 2rem);
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    top: 0px;
+    height: 100px;
+    align-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.NavFlex{
+    font-size: clamp(16px, 1.3vw, 2rem);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.NavLink{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.NavLink>li{
+    display: flex;
+    align-items: center;
+}
+
+.NavLink>li>a{
+    width: fit-content;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: clamp(14px, 1.2vw, 2rem);
+}
+
+.Navhead{
+    font-weight: 900;
+}
+
+
+
+.NavHidOne{
+    border-left: 1px solid lightgray;
+    padding-left: 10px;
+}
+
+.hide{
+    display: none;
+    position: absolute;
+    color: #E65C27;
+    top: 80px;
+    right:150px;
+    background: rgba(0, 0, 0, 0.712);
+    /* background: linear-gradient(#EEAECA, #94BBE9); */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    padding: 20px;
+    width: 12%;
+
+}
+
+.NavFlex:hover + .hide{
+    display: block;
+}
+
+.namesec>div>input, .submit>input{
+    padding: 5px 0px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.submit>input{
+    background: #E65C27;
+}
+
+
+
+
+
+
+
+
+                                               /* Home Page */
+
+
+
+.Home{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 5vh);
+}
+
+.HomeCard{
+    grid-area: 2 / 1 / 10 / 7;
+    background-color: 	#394B5C;
+    color: white;
+    font-size: clamp(12px, 1.8vw, 2rem);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+.HomeImg{
+    grid-area: 6 / 6 / 16 / 13;
+    background-image: url(./ImageFolder/WoodWork-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    border-radius: 5px;
+}
+
+.HomeSlide{
+    grid-area: 14/ 2 / 20 / 12;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.HomeStrip{
+    grid-area: 1 / 5 / -1 / 8;
+    background-color: 	#E65C27 ;
+}
+
+.Slides{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 15px 15px;
+    font-size: clamp(12px, 1.2vw, 2rem);
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+}
+
+.Slides>img{
+    width: 50px;
+    border-radius: 0px;
+}
+
+
+                                                  /* Wood Truss Page */
+
+.WoodTruss{
+    text-align: center;
+}
+
+.WoodTruss>p, .WoodTruss>h1{
+    margin: 30px;
+}
+
+
+
+.BoxCont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    height: 90vh;
+    font-size: clamp(12px, 1.2vw, 2rem);
+    grid-gap: 20px;
+}
+
+
+.BoxInfo1, .BoxInfo2, .BoxInfo3{
+    padding: 21% 20px;
+    align-self: center;
+}
+
+.BoxInfo1{
+    background-color: #E65C27;
+}
+.BoxInfo2{
+    background-color: white;
+}
+.BoxInfo3{
+    background-color: #394B5C;
+}
+
+.BoxImg1{
+    background-image: url(./ImageFolder/WoodWork-4.jpg);
+}
+
+.BoxImg2{
+    background-image: url(./ImageFolder/WoodWork-5.jpg);
+}
+
+.BoxImg3{
+    background-image: url(./ImageFolder/WoodWork-6.jpg);
+}
+
+.BoxCont>div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+                                                 /* Page Three */
+
+
+.Page3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    font-size: clamp(14px, 1.2vw, 2rem);
+
+}
+
+
+
+.p3ImgOne>img, .p3ImgTwo>img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.p3ImgOne>img{
+    width: 70%;
+    
+}
+
+.p3ImgTwo>img{
+    width: 80%;
+    
+}
+
+
+.CardOne, .CardTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 10px;
+    justify-content: space-evenly;
+}
+
+.CardOne>.Contant{
+    width: 80%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.p3ImgTwo{
+    width: 80%;
+    align-self: flex-end;
+}
+
+.p3ImgTwo>img{
+    width: 100%;
+}
+
+img{
+    border-radius: 10px;
+}
+
+button{
+    font-size: clamp(13px, 1.2vw, 2rem);
+    width: fit-content;
+    letter-spacing: 2px;
+    background-color: #E65C27;
+    color: #F0F0F0;
+    padding: 10px;
+    border-radius: 2px;
+    border: #E65C27;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+                                                     /* Page Four */
+
+
+.Page4{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(25, 5vh);
+    height: fit-content;
+    font-size: clamp(12px, 1.4vw, 2rem);
+
+}
+
+.Page4Stripe{
+    grid-area: 1/1/26/11;
+    background-color: #E65C27;
+}
+
+.p4ImgOne{
+    grid-area: 2/13/5/17;
+}
+
+.p4ImgOne>img{
+    width: 16em;
+    height: 16em;
+}
+
+.p4ImgTwo{
+    grid-area: 3/1/15/8;
+    padding-left: 50px; 
+}
+
+.p4ImgTwo>img{
+    width: 15em;
+    height: 15em;
+    
+}
+
+.p4ImgThree{
+    grid-area: 6/5/15/10;
+}
+
+.p4ImgThree>img{
+    width: 25em;
+    height: 25em;
+}
+
+.p4ImgFour{
+    grid-area: 16/3/20/6;
+    z-index: 5;
+
+}
+
+.p4ImgFour>img{
+    width: 14em;
+    height: 14em;
+}
+
+
+.p4ImgOne>img, .p4ImgTwo>img, .p4ImgThree>img, .p4ImgFour>img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%; 
+}
+
+.p4Cont{
+    grid-area: 17/10/25/19;
+    background-color: #394B5C;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    gap: 10px;
+    z-index: 10;
+    align-content: center;
+}
+
+                                                        /* Three Card Page */
+
+.ThreeCard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    grid-gap: 10px;
+    height: 100vh;
+    text-align: center;
+    line-height: 30px;
+    font-size: clamp(12px, 1.2vw, 2rem);
+}
+
+
+.tcStrip2{
+    grid-area: 9/1/15/4;
+    background-color: #E65C27;
+}
+
+.tcOne{
+    grid-area: 2/1/10/2;
+    justify-self: end;
+}
+
+
+.tcTwo{
+    grid-area: 5/2/13/3;
+    justify-self: center;
+}
+
+.tcThree{
+    grid-area: 2/3/10/4;
+    justify-self: start;
+}
+
+.ThreeCard>p{
+    grid-area: 13/2;
+    align-self: flex-end;
+    z-index: 10;
+}
+
+.tcOne, .tcTwo, .tcThree{
+    width: 70%;
+    background-color: white;
+    align-content: center;
+    box-shadow: 0 0 19px gray;
+    /* border-radius: 5px; */
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+.ThreeCard>div>img{
+    width: 100px;
+}
+
+
+
+                       /* ===================== BigCard Page   ======================== */
+
+.BigCard{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr) ;
+    grid-template-rows: repeat(8, 18vh);
+}
+
+.BigCard>.StripOne{
+    grid-area: 1/1/4/-1;
+    background-color: #E65C27;
+}
+
+.BigCard>.CardImg{
+    grid-area: 1/4/5/14;
+    background-image: url(./ImageFolder/WoodWork-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    margin-top: 30px;
+}
+
+.DoubleCardOne{
+    grid-area: 2/2/5/16;
+    background-color: white;
+}
+
+.DoubleCardTwo{
+    grid-area: 5/2/9/16;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    line-height: 30px;
+    padding: 50px;
+    font-size: clamp(12px, 1.2vw, 2rem);
+    margin-bottom: 30px;
+}
+
+.DoubleCardTwo>p{
+    margin: 20px;
+}
+
+
+                        /* ===================== Project Page   ======================== */
+
+.Project{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    height: fit-content;
+    line-height: 35px;
+    margin: 100px 20px;
+    gap: 30px;
+    font-size: clamp(13px, 1.2vw, 2rem);
+}
+
+.Project>div>p, .Project>div>h1{
+    margin: 10px 0px;
+}
+
+.Prohead{
+    width: 30%;
+}
+
+.Protext{
+    width: 30%;
+}
+
+                              /* ===================== Contact Page   ======================== */
+
+
+.Contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    height: fit-content;
+    font-size: clamp(16px, 1.2vw, 2rem);
+}
+
+form{
+    /* width: 40%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+
+.ContImg{
+    width: 100%;
+}
+
+.ContImg{
+    background-image: url(./ImageFolder/pagethree-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ContInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 30px 30px;
+    background-color: #F0F0F0;
+}
+
+input, textarea{
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    width: 90%;
+    
+}
+
+input{
+    height: 5%;
+    padding-bottom: 10px;
+}
+
+textarea{
+    height: 10%;
+}
+
+.button{
+    font-size: clamp(13px, 1.2vw, 2rem);
+    letter-spacing: 2px;
+    background-color: #E65C27;
+    color: #F0F0F0;
+    padding: 10px;
+    border-radius: 2px;
+    border: #E65C27;
+    height: fit-content;
+}
+
+                     /* ===================== ThankYou Page   ======================== */
+
+
+.ThankYou{
+    width: 100%;
+    height: 25vh;
+    font-size: clamp(11px, 1.2vw, 2rem);
+    background-color: midnightblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.ThankYou>h3{
+    padding: 0px 50px;
+}
+
+                    
+
+
+
+
+
+
+
+
+
+                      /* ===================== Responsive Page   ======================== */
+
+
+                      /* ===================== NavBar Page   ======================== */
+                      
+
+@media (max-width: 768px){
+    .NavHidOne{
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px){
+    .NavHid{
+       display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 /*============================= Home Responsive Page =============================*/
+
+
+@media(max-width: 998px){
+    .HomeSlide{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Home{
+        grid-template-rows: repeat(23, 5vh);
+    }
+
+    /* .Main{
+        padding: 0px 20px;
+    } */
+    .Padd{
+        padding: 0px 20px;
+    }
+
+}
+
+@media(max-width: 600px){
+    .Home{
+        grid-template-rows: repeat(21, 5vh);
+    }
+    .Slides>img{
+        display: none;
+    }
+    .HomeImg{
+        grid-area: 6 / 6 / 12 / 13;
+
+    }
+    .HomeSlide{
+        grid-area: 11/ 2 / 18 / 12;
+    }
+
+}
+
+
+                 /* =============================  Page 2   ============================= */
+
+
+@media(max-width: 600px){
+    .BoxCont{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        'info1 img1'
+        'img2 info2'
+        'info3 img3';
+        height: fit-content;
+    }
+    .BoxImg1{
+        grid-area: img1;
+    }
+    .BoxImg2{
+        grid-area: img2;
+    }
+    .BoxImg1{
+        grid-area: img3;
+    }
+    .BoxInfo1{
+        grid-area: info1;
+    }
+    .BoxInfo2{
+        grid-area: info2;
+    }
+    .BoxInfo3{
+        grid-area: info3;
+    }
+
+}
+
+
+@media (max-width:410px){
+    .BoxCont{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        'img1'
+        'info1'
+        'img2'
+        'info2'
+        'img3'
+        'info3'
+        ;
+    }
+    .BoxImg1{
+        grid-area: img1;
+    }
+    .BoxImg2{
+        grid-area: img2;
+    }
+    .BoxImg1{
+        grid-area: img3;
+    }
+    .BoxInfo1{
+        grid-area: info1;
+    }
+    .BoxInfo2{
+        grid-area: info2;
+    }
+    .BoxInfo3{
+        grid-area: info3;
+    }
+
+}
+
+
+
+
+
+                           /*=========================== Page 3 ================================*/
+
+
+
+@media (max-width: 600px){
+    .p3ImgOne>img, .p3ImgTwo{
+        width: 100%;
+    }
+    .CardOne>.Contant{
+        width: 100%;
+        
+    }
+
+    .Page3{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .CardOne, .CardTwo{
+        gap: 10px;
+    }
+
+}
+
+
+
+                          /* ============================  Page Four  ========================= */
+
+
+
+@media (max-width: 998px){
+    .p4ImgOne>img{
+       width: 14em;
+       height: 14em;
+     }
+     .p4ImgTwo>img{
+    width: 17em;
+    height: 17em;
+    
+}
+    .p4ImgFour>img{
+    width: 16em;
+    height: 16em;
+    
+}
+
+}
+
+    
+
+@media (max-width: 450px){
+    .p4Cont{
+        grid-area: 17/8/25/20;
+    }
+    .p4ImgOne{
+    grid-area: 1/11/5/17;
+}
+    
+}
+
+
+
+@media (max-width: 400px){
+    .p4ImgTwo{
+        padding-left: 20px;
+    }
+    .p4ImgThree{
+        grid-area: 7/2/15/10;
+    }
+    .p4ImgOne{
+        grid-area: 1/9/5/17;
+    }
+
+    .p4ImgFour{
+        grid-area: 15/3/18/7;
+    }
+    
+    .p4ImgThree>img{
+        width: 23em;
+        height: 23em;
+    
+    }
+
+}
+
+
+
+                    /* ===================== ThreeCard Page   ======================== */
+
+
+
+
+@media (max-width: 665px){
+    
+.tcOne{
+    grid-area: 2/1/6/-1;
+    justify-self: center;
+}
+
+
+.tcTwo{
+    grid-area: 6/1/10/-1;
+    /* justify-self: center; */
+}
+
+.tcThree{
+    grid-area: 10/1/14/-1;
+    justify-self: center;
+}
+
+.tcOne, .tcTwo, .tcThree{
+    width: 80%;
+}
+
+.ThreeCard>div>img{
+    width: 50px;
+}
+
+.ThreeCard{
+    line-height: 20px;
+}
+
+
+.ThreeCard>p{
+    grid-area: 14/2;
+    align-self: center;
+}
+
+
+}
+
+
+
+                           /* ===================== BisCard Page   ======================== */
+
+
+@media(max-width: 600px){
+    .BigCard>.CardImg {
+    /* grid-area: 1 / 4 / 4 / 14; */
+    margin-bottom: 60px;
+    margin-top: 60px;
+
+}
+    .DoubleCardTwo {
+    grid-area: 4 / 2 / 9 / 16;}
+}
+
+
+@media (max-width: 490px){
+    .DoubleCardTwo{
+       padding: 20px;
+       line-height: 20px;
+}
+.BigCard>.CardImg {
+    grid-area: 1 / 3 / 5 / 15;}
+
+}
+
+
+
+                           /* ===================== BisCard Page   ======================== */
+
+
+@media (max-width:700px){
+    .Project{
+        flex-direction: column;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+
+    }
+    .Prohead, .Protext{
+    width: 100%;
+}
+
+
+}
+
+                           /* ===================== Contact Page   ======================== */
+
+
+
+@media (max-width:600px){
+.Contact{
+    grid-template-columns: 1fr;
+}
+
+form{
+    width: 100%;
+    height: 400px;
+}
+
+input, textarea{
+   width: 100%;
+    
+}
+
+.ContImg{
+    width: 100%;
+    height: 300px;
+}
+
+
+}

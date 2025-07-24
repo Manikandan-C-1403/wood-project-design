@@ -1,0 +1,98 @@
+
+body{
+    margin: 0px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+}
+
+#Main{
+    justify-items: center;
+}
+
+h1, h2, h3, h4, h5, p{
+    margin: 0px;
+}
+
+
+                                                       /* Home Page */
+
+
+.Home{
+    display: flex;
+    height: 100vh;
+    width: 90vw;
+}
+ 
+.HomeCont{
+    position: relative;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.HomeCard{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    padding: 30px 20px;
+    width: 45%;
+    font-size: 1.9vw;
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+}
+
+.HomeImg{
+    width: 100%;
+    height: fit-content;
+    text-align: right;
+    position: absolute;
+    top: 150px;
+
+}
+
+.HomeImg>img{
+    width: 60%;
+    aspect-ratio: 6 / 3;
+    object-fit: cover;    
+}
+
+.HomeSlide{
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-size: 1.3vw;
+    position: relative;
+    bottom: 60px;
+}
+
+.Slides{
+    background-color: aquamarine;
+    z-index: 10;
+    padding: 15px;
+}
+
+.Slides>img{
+    width: 55px;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .HomeSlide{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
